@@ -1,0 +1,62 @@
+.tabGroup {
+    margin: .25rem;
+
+    .tabList {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #CCC;
+
+        li {
+            margin: 0 .25rem;
+            margin-bottom: -1px;
+            border: 1px solid transparent;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            
+            button {
+                padding: .5rem;
+                background: transparent;
+                color: #00F;
+                font: {
+                    family: inherit;
+                    size: inherit;
+                }
+                border: none;
+                cursor: pointer;
+            }
+
+            &[data-active=true] {
+                background-color: #FFF;
+                border: 1px solid #CCC;
+                border-bottom: 1px solid transparent;
+                
+                &:hover {
+                    border-color: #CCC;
+                    border-bottom-color: transparent;
+                }
+
+                button {
+                    color: #000;
+                    cursor: default;
+                }
+            }
+
+            &:hover {
+                border: 1px solid #DDD;
+                border-bottom: 1px solid #CCC;
+            }
+        }
+    }
+}
+
+.tabContent {
+    margin: .5rem;
+    padding: .25rem;
+
+    .tabPane[data-active=false] {
+        display: none;
+    }
+}

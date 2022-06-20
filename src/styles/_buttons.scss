@@ -1,0 +1,29 @@
+.btn {
+    padding: .75rem 2rem;
+    background-color: #CCC;
+    color: #222;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+
+    &:hover {
+        opacity: .85;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: .65;
+    }
+
+    &.btn-block {
+        display: block;
+        width: 100%;
+    }
+
+    &.btn-success {
+        background-color: var(--color-success);
+        color: #FFF;
+    }
+}

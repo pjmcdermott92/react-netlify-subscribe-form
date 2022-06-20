@@ -1,0 +1,15 @@
+.subscriberCard {
+    margin: 1rem 0;
+    padding: 1rem 1rem 0;
+    border: 1px solid #000;
+
+    h4, p {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+    }
+
+    p {
+        color: #333;
+    }
+}
