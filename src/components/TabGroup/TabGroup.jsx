@@ -9,7 +9,7 @@ const TabGroup = ({ children, className, defaultTab = 0, ...props }) => {
         if (!children) return setTabs([]);
         let tabItems = [];
         Array.from(children).forEach(child => {
-            if (child.type.name === 'Tab') tabItems.push({
+            tabItems.push({
                 title: child.props.title, content: child.props.children, props: child.props
             });
         });
